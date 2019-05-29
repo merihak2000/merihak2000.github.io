@@ -1,0 +1,270 @@
+body {
+  height: 100%;
+  margin: 0;
+  font-size: 16px;
+  overflow-x: hidden;
+  font-weight: 400;
+  line-height: 1.8em;
+  color:#666;
+  
+  padding: 0
+}
+html {
+  scroll-behavior: smooth;
+}
+.to-about{
+  position: absolute;
+  text-decoration: none; 
+  font-size: 25px;
+  transition: all 0.3s;
+  margin: 3%;
+  font-weight:bold;
+  background: linear-gradient(90deg, rgb(6, 6, 65),rgb(84, 84, 212), rgb(15, 15, 87), blue);
+  animation: animate 5s linear infinite;
+  background-size: 80%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+}
+
+#about {
+  top:300px;
+}
+
+#aboutme {
+  text-align: center;
+}
+#skills {
+  top:170px;
+  right:80px;
+  
+}
+
+@keyframes animate {
+  from {
+    background-position: -1000%;
+  }
+  to {
+    background-position: 1000%;
+  }
+}
+.to-about:hover {
+ color: #ffffff;
+ font-size: 40px;
+}
+
+.img1, .img2, .img3 {
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  background-attachment: fixed;
+}
+.img1 {
+  background-image: url(./images/mery1.JPEG);
+  min-height: 600px;
+  margin-top: -5vh
+}
+.img2 {
+  background-image: url(./images/mery-3820.JPG);
+  min-height: 400px;
+}
+
+.img3 {
+  background-image: url(./images/IMG-3939.PNG);
+  min-height: 600px;
+}
+
+.section {
+  padding: 20px 80px;
+}
+
+.section-light {
+  background-color: rgba(16, 16, 94, 0.151);
+  color: #666;
+}
+.section-dark {
+  background-color: #282e34;
+  color: #ddd;
+}
+
+.name{
+  font-size: 50px;
+  color: #002448;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: left;
+  padding-left: 55%;
+  padding-top: 20%;
+  position: relative;
+  animation: text 3s 1;
+}
+
+@keyframes name {
+  0% {
+    color: #0024481a;
+    margin-bottom: -40px;
+    transition: 1s;
+  }
+} 
+
+.developer {
+  color:#0753a0b6;
+  padding-left: 867px;
+  font-size: 25px;
+}
+
+.insta-begin{
+  width: 50px;
+  height: 50px;
+  position: relative;
+  left: 0px;
+  
+  visibility: hidden
+}
+.face-begin {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  right:1px;
+  
+  visibility: hidden
+}
+.insta {
+  width: 50px;
+  height: 50px;
+  animation: insta 1s;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+  position: absolute;
+  left:250px;
+  visibility: visible;
+  top:9px;
+}
+
+@keyframes insta {
+  from{left:0}
+  to{left:250px;}
+}
+
+
+.fb {
+  width: 50px;
+  height: 50px;
+  animation: fb 1s;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+  position: absolute;
+  right: 310px;
+  top:9px;
+}
+
+@keyframes fb {
+  from{right:0px}
+  to{right:310px;}
+}
+
+.skillsBox {
+  position: relative;
+  width: 400px;
+  padding:60px;
+  left:700px;
+  
+}
+
+.skillsBox h1 {
+  margin: 0 80 20px;
+  padding: 0;
+  color: #002448;
+  
+}
+
+.skills {
+  position: relative;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.skills h2 {
+  margin: 10px 0 0;
+  padding:0;
+  font-size: 20px;
+  color:#002448;
+  text-transform: uppercase;
+}
+
+.progress {
+  width: 100%;
+  height:  20px;
+  border-radius: 7px;
+  border: 2px solid #002448;
+  line-height: 22px;
+  color: #fff;
+  overflow: hidden;
+}
+
+.progress .procent {
+  text-align: right;
+  color:#002448;
+  padding-right: 10px;
+  border-right: 2px solid #002448;
+  animation: animate 1s linear infinite;
+  background: linear-gradient(45deg,rgba(16, 16, 94, 0.315) 25%, transparent 25%, 
+            transparent 50%, rgba(16, 16, 94, 0.315) 50%,
+            rgba(16, 16, 94, 0.315) 75%, transparent 75%, transparent);
+  background-size: 30px 30px;
+ }
+
+ @keyframes animate {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 30px 0;
+  }
+}
+
+.hamar {
+  color: #fff;
+  font-size: 20px;
+  transition: all 0.3s;
+  text-decoration:none;
+  top:60px;
+  position: absolute;
+  left:30px;
+}
+.hamar:hover {
+  font-size: 30px; 
+}
+.mail {
+  color: #fff;
+  font-size: 20px;
+  transition: all 0.3s;
+  text-decoration:none;
+  position: absolute;
+  
+  top:60px;
+  right:30px;
+}
+.mail:hover {
+  font-size: 30px;
+}
+
+#section3 {
+  position: relative;
+  /* margin-top:120px; */
+  width: 390px;
+  height: 50px;
+  top: 73px;
+  opacity: 0.9;
+  justify-content: space-between;
+  flex-direction: row;
+  border-radius: 20px 20px 0px 0px;
+  left: 0px;
+  right: 0px;
+  margin: 0px auto;
+  -webkit-box-shadow: 2px -8px 29px 0px rgba(0,0,0,0.5);
+-moz-box-shadow: 2px -8px 29px 0px rgba(0,0,0,0.5);
+box-shadow: 2px -8px 29px 0px rgba(0,0,0,0.5);
+
+}
